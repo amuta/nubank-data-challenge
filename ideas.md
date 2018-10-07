@@ -73,3 +73,14 @@ application_time_in_funnel	Int	Tempo gasto pelo aplicante durante o processo de 
 application_time_applied	Date	Horário de aplicação
 target_default	Bool	Indicativo de default
 target_fraud	String	Pode assumir dois valores positivos referentes a dois tipos de fraude: fraud_id/fraud_friends_family, NaN se não houve
+
+
+Dados de comportamento
+Coluna  Tipo    Descrição
+ids String  identificador único de um aplicante
+credit_line Int Limite do cartão
+month   Int Ordenação dos meses que a pessoa é cliente, sendo 0 o primeiro mês dela como cliente
+spend   Float   Valor gasto naquele mês
+revolving_balance   Float   Valor que o cliente não pagou da fatura atual e que irá rolar para a próxima
+card_request    Int Se o cliente solicitou uma nova via do cartão (ou a primeira)
+minutes_cs  Float   Quantidade de minutos utilizados do serviço de atendimento ao consumidor
